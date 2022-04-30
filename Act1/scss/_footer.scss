@@ -1,0 +1,13 @@
+footer {
+    align-items: center;
+    color: $color-principal;
+    display: grid;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    grid-template-columns: 10% 40%;
+    margin: 1rem 3rem;
+    div li:hover {
+        color: black;
+        cursor: pointer;
+    }
+}

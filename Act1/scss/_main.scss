@@ -1,0 +1,32 @@
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 3rem;
+    section { 
+    display: grid;
+    gap: 12px;
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+        color: $color-principal;
+        font-weight: lighter;
+        line-height: 2rem;
+    }
+    }
+    button {
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        height: 40px;
+        width: 150px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8rem;
+        background: -webkit-linear-gradient(#803775, #c43385, #f5924d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: solid 1px $color-principal;
+    }
+}

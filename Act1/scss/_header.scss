@@ -1,0 +1,36 @@
+header {
+    align-items: center;
+    display: grid;
+    font-size: 1rem;
+    grid-template-columns: 10% 75% 15%;
+    margin: 1rem 3rem;
+    .txt_gradient {
+        background: -webkit-linear-gradient(#803775, #c43385, #f5924d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.1rem;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 10%);
+        font-size: 0.8rem;
+        color: $color-principal;
+        li:hover {
+            color: black;
+            cursor: pointer;
+        }
+    }
+    button {
+        background: rgb(99,43,91);
+        background: linear-gradient(100deg, rgba(99,43,91,1) 0%, rgba(196,51,133,1) 40%, rgba(245,146,77,1) 79%);
+        border: none;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        height: 40px;
+        width: 120px;
+        justify-self: flex-end;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.75rem;
+    }
+}
