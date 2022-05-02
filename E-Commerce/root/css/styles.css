@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 10% 1fr 10% 10%;
+  place-items: center start;
+  margin: 1.5rem;
+}
+header img:last-child {
+  width: 25px;
+  height: 25px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+main section img {
+  /*funcion*/
+  width: 375px;
+  height: 360px;
+}
+main section h6 {
+  color: hsl(26deg, 100%, 55%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main section div span:nth-child(2) {
+  color: hsl(26deg, 100%, 55%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: hsl(25deg, 100%, 94%);
+  padding: 5px;
+  border-radius: 5px;
+}
+main section div span:nth-child(3) {
+  color: hsl(220deg, 14%, 75%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: line-through;
+  justify-self: end;
+}
+main section h2, main section div span:first-child {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+main section p {
+  font-size: 1.6rem;
+  color: hsl(219deg, 9%, 45%);
+}
+main section .precios {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center start;
+  gap: 10px;
+}
+main section .boton {
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: hsl(223deg, 64%, 98%);
+  padding: 15px 100px;
+  border-radius: 5px;
+  align-self: center;
+  justify-self: center;
+}
+main section .boton span {
+  place-self: center center;
+}
+main section .cart {
+  background-color: hsl(26deg, 100%, 55%);
+  color: hsl(0deg, 0%, 100%);
+}
+main section:last-child {
+  padding: 1rem 2rem;
+  display: grid;
+  place-items: center start;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */

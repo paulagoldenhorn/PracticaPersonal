@@ -1,0 +1,55 @@
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    section {
+        img { /*funcion*/
+            width: 375px;
+            height: 360px;
+        }
+        h6 {
+            @include texto ($cp-orange);
+            text-transform: uppercase;
+        }
+        div span:nth-child(2) {
+            @include texto ($cp-orange);
+            background-color: $cp-pale-orange;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        div span:nth-child(3) {
+            @include texto ($cs-grayish-blue);
+            text-decoration:line-through;
+            justify-self: end;
+        }
+        h2, div span:first-child {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.6rem;
+            color: $cs-dark-grayish-blue;
+        }
+        .precios {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            place-items: center start;
+            gap: 10px;
+        }
+        .boton {
+            @include texto ($cs-black);
+            @include botones ($cs-light-greyish-blue);
+            span {
+                place-self: center center;
+            }
+        }
+        .cart {
+            background-color: $cp-orange;
+            color: $cs-white;
+        }
+    }
+    section:last-child {
+        padding: 1rem 2rem;
+        display: grid;
+        place-items: center start;
+    }
+}

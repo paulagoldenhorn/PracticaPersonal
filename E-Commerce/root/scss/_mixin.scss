@@ -1,0 +1,13 @@
+@mixin texto ($color-texto) {
+    color: $color-texto;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+@mixin botones ($color-fondo) {
+    background-color: $color-fondo;
+    padding: 15px 100px;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+}

@@ -1,0 +1,10 @@
+header {
+    display: grid;
+    grid-template-columns: 10% 1fr 10% 10%;
+    place-items: center start;
+    margin: 1.5rem;
+    img:last-child {
+        width: 25px;
+        height: 25px;
+    }
+}
