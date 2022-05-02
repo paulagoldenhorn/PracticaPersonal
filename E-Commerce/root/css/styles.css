@@ -24,12 +24,14 @@ header img:last-child {
 
 main {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 40% 1fr;
 }
-main section img {
-  /*funcion*/
-  width: 375px;
-  height: 360px;
+main section .imagen {
+  background-image: url("../img/image-product-1.jpg");
+  width: 100vw;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main section h6 {
   color: hsl(26deg, 100%, 55%);
@@ -52,7 +54,7 @@ main section div span:nth-child(3) {
   text-decoration: line-through;
   justify-self: end;
 }
-main section h2, main section div span:first-child {
+main section h2, main section div span:first-child, main section .cantidad :first-child, main section .cantidad :last-child {
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -66,7 +68,35 @@ main section .precios {
   place-items: center start;
   gap: 10px;
 }
-main section .boton {
+main section .cantidad {
+  display: grid;
+  grid-template-columns: 40% 1fr 40%;
+  background-color: hsl(223deg, 64%, 98%);
+  padding: 15px 100px;
+  border-radius: 5px;
+  align-self: center;
+  justify-self: center;
+  padding: 15px;
+  width: 280px;
+  align-items: center;
+}
+main section .cantidad p {
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  justify-self: center;
+}
+main section .cantidad :first-child {
+  color: hsl(26deg, 100%, 55%);
+  justify-self: start;
+  align-self: center;
+}
+main section .cantidad :last-child {
+  color: hsl(26deg, 100%, 55%);
+  justify-self: end;
+  align-self: center;
+}
+main section .cart {
   color: hsl(0deg, 0%, 0%);
   font-size: 1.3rem;
   font-weight: 700;
@@ -75,26 +105,32 @@ main section .boton {
   border-radius: 5px;
   align-self: center;
   justify-self: center;
-}
-main section .boton span {
-  place-self: center center;
-}
-main section .cart {
   background-color: hsl(26deg, 100%, 55%);
   color: hsl(0deg, 0%, 100%);
+  place-self: center center;
+  display: flex;
+  gap: 10px;
 }
-main section:last-child {
+main section .cart::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f07a";
+}
+main .info {
   padding: 1rem 2rem;
   display: grid;
   place-items: center start;
+  gap: 15px;
+  margin-bottom: 50px;
 }
 
-.attribution {
+footer {
+  margin: 1rem;
+}
+footer .attribution {
   font-size: 11px;
   text-align: center;
 }
-
-.attribution a {
+footer .attribution a {
   color: hsl(228deg, 45%, 44%);
 }
 
