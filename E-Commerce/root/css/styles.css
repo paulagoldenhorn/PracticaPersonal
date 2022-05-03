@@ -39,7 +39,7 @@ main section h6 {
   font-weight: 700;
   text-transform: uppercase;
 }
-main section div span:nth-child(2) {
+main section .precios span:nth-child(2) {
   color: hsl(26deg, 100%, 55%);
   font-size: 1.3rem;
   font-weight: 700;
@@ -58,7 +58,7 @@ main section h2, main section div span:first-child, main section .cantidad :firs
   font-size: 2.5rem;
   font-weight: 700;
 }
-main section p {
+main section .main_info_p {
   font-size: 1.6rem;
   color: hsl(219deg, 9%, 45%);
 }
@@ -68,10 +68,15 @@ main section .precios {
   place-items: center start;
   gap: 10px;
 }
+main section .botones {
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 main section .cantidad {
   display: grid;
   grid-template-columns: 40% 1fr 40%;
-  background-color: hsl(223deg, 64%, 98%);
+  background-color: hsl(219deg, 9%, 45%);
   padding: 15px 100px;
   border-radius: 5px;
   align-self: center;
@@ -96,7 +101,7 @@ main section .cantidad :last-child {
   justify-self: end;
   align-self: center;
 }
-main section .cart {
+main section #cart {
   color: hsl(0deg, 0%, 0%);
   font-size: 1.3rem;
   font-weight: 700;
@@ -111,7 +116,7 @@ main section .cart {
   display: flex;
   gap: 10px;
 }
-main section .cart::before {
+main section #cart::before {
   font-family: "Font Awesome 5 Free";
   content: "\f07a";
 }
@@ -148,6 +153,11 @@ footer .attribution a {
     display: inline-block;
   }
 
+  hr {
+    color: hsl(223deg, 64%, 98%);
+    margin: 0rem 12.5rem;
+  }
+
   header {
     grid-template-columns: 20% 10% 5% 8% 8% 8% 1fr 10%;
     margin: 4rem 6rem;
@@ -172,6 +182,7 @@ footer .attribution a {
   }
   main .section1 {
     display: grid;
+    grid-template-rows: 1fr 20%;
   }
   main .section1 img {
     width: 400px;
@@ -180,11 +191,11 @@ footer .attribution a {
   }
   main .section1 div {
     justify-self: center;
-    row-gap: 10px;
   }
   main .section1 div img {
     width: 80px;
     border-radius: 15px;
+    row-gap: 10px;
   }
   main .section1 div img:hover {
     border: solid 3px hsl(26deg, 100%, 55%);
@@ -194,7 +205,7 @@ footer .attribution a {
   main .info h2 {
     font-size: 4rem;
   }
-  main .info p {
+  main .info .main_info_p {
     padding: 2rem 5rem 2rem 0rem;
   }
   main .info .precios {
@@ -202,6 +213,19 @@ footer .attribution a {
   }
   main .info div span:nth-child(3) {
     justify-self: start;
+  }
+  main .botones {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: none;
+    gap: 10px;
+  }
+  main .botones .cantidad {
+    padding: 10px;
+    width: 150px;
+  }
+  main .botones #cart {
+    padding: 15px 70px;
   }
 }
 

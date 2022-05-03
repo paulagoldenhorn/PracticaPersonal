@@ -23,6 +23,11 @@
     display: inline-block;
     }
 
+    hr {
+        color: $cs-light-greyish-blue;
+        margin: 0rem 12.5rem;
+    }
+
     header {
     grid-template-columns: 20% 10% 5% 8% 8% 8% 1fr 10%;
     margin: 4rem 6rem;
@@ -46,6 +51,7 @@
         margin: 8rem 15rem;
         .section1 {
             display: grid;
+            grid-template-rows: 1fr 20%;
             img {
             width: 400px;
             border-radius: 15px;
@@ -53,10 +59,10 @@
             }
             div {
                 justify-self: center;
-                row-gap: 10px;
                 img {
                     width: 80px;
                     border-radius: 15px;
+                    row-gap: 10px;
                     &:hover {
                         border: solid 3px $cp-orange;
                         opacity: 50%;
@@ -69,7 +75,7 @@
             h2 {
                 font-size: 4rem;
             }
-            p {
+            .main_info_p {
                 padding: 2rem 5rem 2rem 0rem;
             }
             .precios {
@@ -77,6 +83,19 @@
             }
             div span:nth-child(3) {
                 justify-self: start;
+            }
+        }
+        .botones {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: none;
+            gap: 10px;
+            .cantidad {
+                padding: 10px;
+                width: 150px;
+            }
+            #cart {
+                padding: 15px 70px;
             }
         }
     }

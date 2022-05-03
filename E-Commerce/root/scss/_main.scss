@@ -13,7 +13,7 @@ main {
             @include texto ($cp-orange);
             text-transform: uppercase;
         }
-        div span:nth-child(2) {
+        .precios span:nth-child(2) {
             @include texto ($cp-orange);
             background-color: $cp-pale-orange;
             padding: 5px;
@@ -28,7 +28,7 @@ main {
             font-size: 2.5rem;
             font-weight: 700;
         }
-        p {
+        .main_info_p {
             font-size: 1.6rem;
             color: $cs-dark-grayish-blue;
         }
@@ -38,10 +38,15 @@ main {
             place-items: center start;
             gap: 10px;
         }
+        .botones {
+            justify-self: center;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
         .cantidad {
             display: grid;
             grid-template-columns: 40% 1fr 40%;
-            @include botones ($cs-light-greyish-blue);
+            @include botones ($cs-dark-grayish-blue);
             padding: 15px;
             width: 280px;
             align-items: center;
@@ -63,7 +68,7 @@ main {
             align-self: center;
         }
 
-        .cart {
+        #cart {
             @include texto ($cs-black);
             @include botones ($cs-light-greyish-blue);
             background-color: $cp-orange;
@@ -72,7 +77,7 @@ main {
             display: flex;
             gap: 10px;
         }
-        .cart::before {
+        #cart::before {
             font-family: "Font Awesome 5 Free";
             content: "\f07a";
         }
