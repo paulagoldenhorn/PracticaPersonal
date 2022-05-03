@@ -134,4 +134,75 @@ footer .attribution a {
   color: hsl(228deg, 45%, 44%);
 }
 
+@media screen and (max-width: 700px) {
+  .hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hideM {
+    display: none;
+  }
+
+  .show {
+    display: inline-block;
+  }
+
+  header {
+    grid-template-columns: 20% 10% 5% 8% 8% 8% 1fr 10%;
+    margin: 4rem 6rem;
+    gap: 5px;
+    justify-items: center;
+  }
+  header p {
+    font-size: 1.6rem;
+    color: hsl(219deg, 9%, 45%);
+  }
+  header img:last-child {
+    width: 50px;
+    height: 50px;
+  }
+  header img:nth-child(8) {
+    justify-self: end;
+  }
+
+  main {
+    grid-template-columns: 50% 50%;
+    margin: 8rem 15rem;
+  }
+  main .section1 {
+    display: grid;
+  }
+  main .section1 img {
+    width: 400px;
+    border-radius: 15px;
+    justify-self: center;
+  }
+  main .section1 div {
+    justify-self: center;
+    row-gap: 10px;
+  }
+  main .section1 div img {
+    width: 80px;
+    border-radius: 15px;
+  }
+  main .section1 div img:hover {
+    border: solid 3px hsl(26deg, 100%, 55%);
+    opacity: 50%;
+    cursor: pointer;
+  }
+  main .info h2 {
+    font-size: 4rem;
+  }
+  main .info p {
+    padding: 2rem 5rem 2rem 0rem;
+  }
+  main .info .precios {
+    grid-template-columns: 1fr 1fr;
+  }
+  main .info div span:nth-child(3) {
+    justify-self: start;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -7,3 +7,77 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 @import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+
+
+@media screen and (max-width: 700px) {
+    .hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hideM {
+        display: none;
+    }
+    .show {
+    display: inline-block;
+    }
+
+    header {
+    grid-template-columns: 20% 10% 5% 8% 8% 8% 1fr 10%;
+    margin: 4rem 6rem;
+    gap: 5px;
+    justify-items: center;
+        p {
+        font-size: 1.6rem;
+        color: $cs-dark-grayish-blue;
+        }
+        img:last-child {
+            width: 50px;
+            height: 50px;
+        }
+        img:nth-child(8){
+            justify-self: end;
+        }
+    }
+
+    main {
+        grid-template-columns: 50% 50%;
+        margin: 8rem 15rem;
+        .section1 {
+            display: grid;
+            img {
+            width: 400px;
+            border-radius: 15px;
+            justify-self: center;
+            }
+            div {
+                justify-self: center;
+                row-gap: 10px;
+                img {
+                    width: 80px;
+                    border-radius: 15px;
+                    &:hover {
+                        border: solid 3px $cp-orange;
+                        opacity: 50%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .info {
+            h2 {
+                font-size: 4rem;
+            }
+            p {
+                padding: 2rem 5rem 2rem 0rem;
+            }
+            .precios {
+                grid-template-columns: 1fr 1fr;
+            }
+            div span:nth-child(3) {
+                justify-self: start;
+            }
+        }
+    }
+}
