@@ -76,7 +76,7 @@ main section .botones {
 main section .cantidad {
   display: grid;
   grid-template-columns: 40% 1fr 40%;
-  background-color: hsl(219deg, 9%, 45%);
+  background-color: hsl(223deg, 64%, 98%);
   padding: 15px 100px;
   border-radius: 5px;
   align-self: center;
@@ -119,6 +119,11 @@ main section #cart {
 main section #cart::before {
   font-family: "Font Awesome 5 Free";
   content: "\f07a";
+}
+main section #cart:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.2s;
 }
 main .info {
   padding: 1rem 2rem;
@@ -167,6 +172,11 @@ footer .attribution a {
   header p {
     font-size: 1.6rem;
     color: hsl(219deg, 9%, 45%);
+  }
+  header p:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s;
   }
   header img:last-child {
     width: 50px;

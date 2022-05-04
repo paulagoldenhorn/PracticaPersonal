@@ -36,6 +36,11 @@
         p {
         font-size: 1.6rem;
         color: $cs-dark-grayish-blue;
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            transition:0.2s;
+        }
         }
         img:last-child {
             width: 50px;

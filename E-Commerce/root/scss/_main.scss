@@ -46,7 +46,7 @@ main {
         .cantidad {
             display: grid;
             grid-template-columns: 40% 1fr 40%;
-            @include botones ($cs-dark-grayish-blue);
+            @include botones ($cs-light-greyish-blue);
             padding: 15px;
             width: 280px;
             align-items: center;
@@ -80,6 +80,11 @@ main {
         #cart::before {
             font-family: "Font Awesome 5 Free";
             content: "\f07a";
+        }
+        #cart:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            transition:0.2s;
         }
     }
     .info {
