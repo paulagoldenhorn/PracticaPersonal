@@ -1,0 +1,12 @@
+header {
+    background-color: $cp-gris-oscuro;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    padding: 2rem 2.5rem;
+    img {
+        align-self: center;
+    }
+    :last-child {
+        justify-self: end;
+    }
+}
