@@ -1,10 +1,5 @@
 main {
     background-color: $cp-gris-claro;
-    %titulos {
-        font-size: 2.5rem;
-        font-weight: 400;
-        color: black;
-    }
     .first_section {
         align-items: center;
         background-image:url(../img/banner.png);
@@ -12,10 +7,10 @@ main {
         display: flex;
         height: 500px;
         div {
-            text-align: center;
             display: grid;
-            grid-template-rows: 1fr 10%;
             gap: 30px;
+            grid-template-rows: 1fr 10%;
+            text-align: center;
             h1 {
                 color: white;
                 font-size: 4rem;
@@ -32,61 +27,72 @@ main {
                 color: white;
                 font-family: 'Roboto', sans-serif;
                 font-size: 2rem;
+                justify-self: center;
                 padding: 1rem 0rem;
                 width: 160px;
-                justify-self: center;
             }
         }
     }
     .second_section {
         margin: 2rem;
         h2 {
-            @extend %titulos;
-            text-align: center;
+            @include titulos (black)
         }
-        div {
+        .productos {
             display: grid;
-            grid-template-rows: repeat(3, 1fr);
-            place-items: center center;
             gap: 20px;
+            grid-template-rows: repeat(3, 1fr);
             margin: 2rem 0rem;
+            place-items: center center;
             article {
                 background-color: white;
+                border-radius: 5px;
                 display: grid;
                 grid-template-rows: 1fr 10%;
-                border-radius: 5px;
-                img {
-                    width: 80px;
+                div {
+                    padding: 3rem 5rem;
+                    img {
+                        justify-self: center;
+                        width: 130px;
+                    }
                 }
-                :nth-child(3) {
-                    font-size: 2rem;
+                hr {
+                    color: $cp-gris-claro;
                 }
-                :nth-child(5) {
-                    color: $cs-verde;
+                span {
+                    padding: 2rem;
+                    :nth-child(1) {
+                        font-size: 2rem;
+                    }
+                    :nth-child(3) {
+                        color: $cs-verde;
+                    }
                 }
             }
         }
     }
     .third_section {
-        margin: 5rem 0rem;
+        margin: 5rem 0rem 0rem 0rem;
         h2 {
-            @extend %titulos;
-            text-align: center;
+            @include titulos (black)
         }
         .div_container {
             display: grid;
             grid-template-rows: 50% 50%;
             justify-items: center;
-            gap: 20px;
-            margin: 2rem 0rem;
+            margin: 2rem 0rem 0rem 0rem;
             div {
+                display: grid;
+                grid-template-rows: repeat(3, 29%);
                 img {
                     border-radius: 5px;
                     width: 250px;
-                    display: flex;
                 }
                 p {
-                    color: red;
+                    color: white;
+                    font-size: 1.5rem;
+                    margin: 0rem 3rem 0rem 0rem;
+                    place-self: center end;
                 }
             }
         }

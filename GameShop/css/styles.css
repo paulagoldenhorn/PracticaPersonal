@@ -27,11 +27,6 @@ header :last-child {
 main {
   background-color: #F3F3F3;
 }
-main .third_section h2, main .second_section h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: black;
-}
 main .first_section {
   align-items: center;
   background-image: url(../img/banner.png);
@@ -40,10 +35,10 @@ main .first_section {
   height: 500px;
 }
 main .first_section div {
-  text-align: center;
   display: grid;
-  grid-template-rows: 1fr 10%;
   gap: 30px;
+  grid-template-rows: 1fr 10%;
+  text-align: center;
 }
 main .first_section div h1 {
   color: white;
@@ -61,58 +56,117 @@ main .first_section div button {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+  justify-self: center;
   padding: 1rem 0rem;
   width: 160px;
-  justify-self: center;
 }
 main .second_section {
   margin: 2rem;
 }
 main .second_section h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 400;
   text-align: center;
 }
-main .second_section div {
+main .second_section .productos {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  place-items: center center;
   gap: 20px;
+  grid-template-rows: repeat(3, 1fr);
   margin: 2rem 0rem;
+  place-items: center center;
 }
-main .second_section div article {
+main .second_section .productos article {
   background-color: white;
+  border-radius: 5px;
   display: grid;
   grid-template-rows: 1fr 10%;
-  border-radius: 5px;
 }
-main .second_section div article img {
-  width: 80px;
+main .second_section .productos article div {
+  padding: 3rem 5rem;
 }
-main .second_section div article :nth-child(3) {
+main .second_section .productos article div img {
+  justify-self: center;
+  width: 130px;
+}
+main .second_section .productos article hr {
+  color: #F3F3F3;
+}
+main .second_section .productos article span {
+  padding: 2rem;
+}
+main .second_section .productos article span :nth-child(1) {
   font-size: 2rem;
 }
-main .second_section div article :nth-child(5) {
+main .second_section .productos article span :nth-child(3) {
   color: #619D00;
 }
 main .third_section {
-  margin: 5rem 0rem;
+  margin: 5rem 0rem 0rem 0rem;
 }
 main .third_section h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 400;
   text-align: center;
 }
 main .third_section .div_container {
   display: grid;
   grid-template-rows: 50% 50%;
   justify-items: center;
-  gap: 20px;
-  margin: 2rem 0rem;
+  margin: 2rem 0rem 0rem 0rem;
+}
+main .third_section .div_container div {
+  display: grid;
+  grid-template-rows: repeat(3, 29%);
 }
 main .third_section .div_container div img {
   border-radius: 5px;
   width: 250px;
-  display: flex;
 }
 main .third_section .div_container div p {
-  color: red;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0rem 3rem 0rem 0rem;
+  place-self: center end;
+}
+
+footer div {
+  background-color: #222222;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center center;
+  padding: 2rem 5rem;
+  gap: 20px;
+}
+footer div img {
+  width: 150px;
+}
+footer div h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+footer div span {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 25px;
+}
+footer div span :nth-child(1) {
+  color: #14AED0;
+}
+footer div span :nth-child(2) {
+  color: #1476D0;
+}
+footer div span :nth-child(3) {
+  color: #CE0CFF;
+}
+footer p {
+  background-color: #F3F3F3;
+  text-align: center;
+  padding: 0.7rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

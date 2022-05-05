@@ -1,0 +1,36 @@
+footer {
+    div {
+        background-color: $cp-gris-oscuro;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        place-items: center center;
+        padding: 2rem 5rem;
+        gap: 20px;
+        img {
+            width: 150px;
+        }
+        h2 {
+            @include titulos (white)
+        }
+        span {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            gap: 25px;
+            :nth-child(1) {
+                color: $cs-celeste;
+            }
+            :nth-child(2) {
+                color: $cs-azul;
+            }
+            :nth-child(3) {
+                color: $cs-violeta
+            }
+        }
+    }
+    p {
+        background-color: $cp-gris-claro;
+        text-align: center;
+        padding: 0.7rem;
+    }
+}
