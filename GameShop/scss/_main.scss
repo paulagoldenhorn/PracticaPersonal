@@ -11,7 +11,7 @@ main {
         div {
             display: grid;
             gap: 30px;
-            grid-template-rows: 1fr 10%;
+            grid-template-rows: 1fr auto;
             text-align: center;
             h1 {
                 color: white;
@@ -50,7 +50,7 @@ main {
                 background-color: white;
                 border-radius: 5px;
                 display: grid;
-                grid-template-rows: 1fr 10%;
+                grid-template-rows: 1fr auto;
                 div {
                     padding: 3rem 5rem;
                     img {
