@@ -4,8 +4,10 @@ main {
         align-items: center;
         background-image:url(../img/banner.png);
         background-repeat:no-repeat;
+        background-size: cover;
         display: flex;
         height: 500px;
+        justify-content: center;
         div {
             display: grid;
             gap: 30px;

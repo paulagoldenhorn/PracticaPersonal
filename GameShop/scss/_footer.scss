@@ -2,10 +2,10 @@ footer {
     div {
         background-color: $cp-gris-oscuro;
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        place-items: center center;
-        padding: 2rem 5rem;
         gap: 20px;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 2rem 5rem;
+        place-items: center center;
         img {
             width: 150px;
         }
@@ -14,9 +14,9 @@ footer {
         }
         span {
             display: grid;
+            gap: 25px;
             grid-template-columns: repeat(3, 1fr);
             justify-items: center;
-            gap: 25px;
             :nth-child(1) {
                 color: $cs-celeste;
             }
@@ -30,7 +30,7 @@ footer {
     }
     p {
         background-color: $cp-gris-claro;
-        text-align: center;
         padding: 0.7rem;
+        text-align: center;
     }
 }
