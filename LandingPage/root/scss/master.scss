@@ -1,0 +1,10 @@
+@import "base";
+@import "var";
+@import "mixin";
+@import "header";
+@import "main";
+@import "footer";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
